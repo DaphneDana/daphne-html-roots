@@ -1,0 +1,440 @@
+/* Technology Page Specific Styles */
+
+/* Active nav link */
+.navbar_links.active {
+    color: #f77062;
+    font-weight: 600;
+}
+
+/* Tech Hero Section */
+.tech-hero {
+    background: linear-gradient(135deg, #141414 0%, #1a1a1a 50%, #0f0f0f 100%);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23333" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.tech-hero__container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.tech-hero__content h1 {
+    font-size: 4rem;
+    background: linear-gradient(45deg, #ff0844, #ffb199, #f77062);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 3s ease infinite;
+    margin-bottom: 1.5rem;
+}
+
+.tech-hero__content p {
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.tech-stats {
+    display: flex;
+    gap: 3rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 2.5rem;
+    color: #f77062;
+    margin-bottom: 0.5rem;
+}
+
+.stat p {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/* Technology Domains */
+.tech-domains {
+    background-color: #141414;
+    padding: 6rem 0;
+}
+
+.tech-domains h2 {
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(45deg, #ff0844, #ffb199);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4rem;
+}
+
+.domains-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.domain-card {
+    background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+    border-radius: 15px;
+    padding: 2.5rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.domain-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(247, 112, 98, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.domain-card:hover::before {
+    left: 100%;
+}
+
+.domain-card:hover {
+    border-color: #f77062;
+    box-shadow: 0 10px 30px rgba(247, 112, 98, 0.3);
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: #f77062;
+    margin-bottom: 1.5rem;
+}
+
+.domain-card h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.domain-card p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.tech-list li {
+    color: #aaa;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #333;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.tech-list li::before {
+    content: '▶';
+    color: #f77062;
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+}
+
+.learn-more-btn {
+    background: linear-gradient(45deg, #f77062, #ff0844);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.learn-more-btn:hover {
+    background: linear-gradient(45deg, #ff0844, #f77062);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(247, 112, 98, 0.4);
+}
+
+/* Innovation Timeline */
+.innovation-timeline {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    padding: 6rem 0;
+}
+
+.innovation-timeline h2 {
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(45deg, #b721ff, #21d4fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #f77062, #ff0844);
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.timeline-date {
+    background: linear-gradient(45deg, #f77062, #ff0844);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 2rem;
+    min-width: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-content {
+    background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid #333;
+    flex: 1;
+    max-width: 300px;
+}
+
+.timeline-content h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.timeline-content p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Tech CTA Section */
+.tech-cta {
+    background: linear-gradient(135deg, #141414, #1a1a1a);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.tech-cta h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.tech-cta p {
+    font-size: 1.3rem;
+    color: #ccc;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 180px;
+}
+
+.cta-btn.primary {
+    background: linear-gradient(45deg, #f77062, #ff0844);
+    color: white;
+}
+
+.cta-btn.primary:hover {
+    background: linear-gradient(45deg, #ff0844, #f77062);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(247, 112, 98, 0.4);
+}
+
+.cta-btn.secondary {
+    background: transparent;
+    color: #f77062;
+    border: 2px solid #f77062;
+}
+
+.cta-btn.secondary:hover {
+    background: #f77062;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 968px) {
+    .tech-hero__content h1 {
+        font-size: 3rem;
+    }
+    
+    .tech-stats {
+        gap: 2rem;
+    }
+    
+    .domains-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: row !important;
+        padding-left: 60px;
+    }
+    
+    .timeline-item:nth-child(odd) {
+        flex-direction: row !important;
+    }
+    
+    .timeline-date {
+        position: absolute;
+        left: -50px;
+        margin: 0;
+        min-width: 80px;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .timeline-content {
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .tech-hero__container {
+        padding: 0 20px;
+    }
+    
+    .tech-hero__content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .tech-hero__content p {
+        font-size: 1.2rem;
+    }
+    
+    .tech-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .tech-domains h2,
+    .innovation-timeline h2,
+    .tech-cta h2 {
+        font-size: 2rem;
+    }
+    
+    .domain-card {
+        padding: 2rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tech-hero__content h1 {
+        font-size: 2rem;
+    }
+    
+    .tech-hero__content p {
+        font-size: 1rem;
+    }
+    
+    .domain-card {
+        padding: 1.5rem;
+    }
+    
+    .timeline-item {
+        padding-left: 40px;
+    }
+    
+    .timeline-date {
+        left: -35px;
+        min-width: 60px;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
