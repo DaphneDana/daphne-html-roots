@@ -121,6 +121,8 @@ Replace images in the `images/` folder:
 - Safari (latest)
 - Edge (latest)
 - Mobile browsers
+## Deployments
+https://daphne-html-roots.vercel.app/
 
 
 ## 🙏 Acknowledgments
