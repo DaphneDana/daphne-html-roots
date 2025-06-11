@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - NEXT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar structure -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="index.html" class="navbar_logo">NEXT</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="index.html" class="navbar_links">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="tech.html" class="navbar_links">Tech</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="products.html" class="navbar_links active">Products</a>
+                </li>
+                <li class="navbar_item navbar_btn">
+                    <a href="signup.html" class="button">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Products Hero Section -->
+    <div class="products-hero">
+        <div class="products-hero__container">
+            <div class="products-hero__content">
+                <h1>Revolutionary Products</h1>
+                <p>Discover our suite of cutting-edge solutions designed to transform your business and accelerate innovation</p>
+                <div class="hero-features">
+                    <div class="feature-pill">
+                        <i class="fas fa-rocket"></i>
+                        <span>Fast Deployment</span>
+                    </div>
+                    <div class="feature-pill">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Enterprise Security</span>
+                    </div>
+                    <div class="feature-pill">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Scalable Solutions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Categories -->
+    <section class="product-categories">
+        <div class="container">
+            <h2>Choose Your Solution</h2>
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All Products</button>
+                <button class="tab-btn" data-category="ai">AI Solutions</button>
+                <button class="tab-btn" data-category="cloud">Cloud Platform</button>
+                <button class="tab-btn" data-category="enterprise">Enterprise</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="products-grid">
+                <!-- AI Assistant Pro -->
+                <div class="product-card featured" data-category="ai">
+                    <div class="product-badge">Most Popular</div>
+                    <div class="product-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Assistant Pro</h3>
+                    <p class="product-subtitle">Intelligent automation platform</p>
+                    <p class="product-description">Advanced AI-powered assistant that automates complex business processes, provides intelligent insights, and enhances decision-making capabilities.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Natural Language Processing</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Predictive Analytics</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 Automated Support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Custom Model Training</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing">
+                        <span class="price">$299</span>
+                        <span class="period">/month</span>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn-primary">Start Free Trial</button>
+                        <button class="btn-secondary">Learn More</button>
+                    </div>
+                </div>
+
+                <!-- Cloud Nexus -->
+                <div class="product-card" data-category="cloud">
+                    <div class="product-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Nexus</h3>
+                    <p class="product-subtitle">Unified cloud management</p>
+                    <p class="product-description">Comprehensive cloud infrastructure platform that provides seamless deployment, monitoring, and scaling across multiple cloud providers.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Multi-Cloud Support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Auto-Scaling</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Real-time Monitoring</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Cost Optimization</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing">
+                        <span class="price">$199</span>
+                        <span class="period">/month</span>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn-primary">Get Started</button>
+                        <button class="btn-secondary">View Demo</button>
+                    </div>
+                </div>
+
+                <!-- DataVault Enterprise -->
+                <div class="product-card" data-category="enterprise">
+                    <div class="product-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>DataVault Enterprise</h3>
+                    <p class="product-subtitle">Secure data management</p>
+                    <p class="product-description">Enterprise-grade data platform with advanced security, compliance features, and real-time analytics for large-scale operations.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>End-to-End Encryption</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Compliance Ready</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Advanced Analytics</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 Enterprise Support</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing">
+                        <span class="price">$599</span>
+                        <span class="period">/month</span>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn-primary">Contact Sales</button>
+                        <button class="btn-secondary">Request Quote</button>
+                    </div>
+                </div>
+
+                <!-- Smart Analytics -->
+                <div class="product-card" data-category="ai">
+                    <div class="product-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Smart Analytics</h3>
+                    <p class="product-subtitle">AI-powered insights</p>
+                    <p class="product-description">Transform your data into actionable insights with machine learning algorithms and interactive dashboards.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Interactive Dashboards</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>ML-Powered Predictions</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Real-time Processing</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Custom Reports</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing">
+                        <span class="price">$149</span>
+                        <span class="period">/month</span>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn-primary">Try Now</button>
+                        <button class="btn-secondary">See Features</button>
+                    </div>
+                </div>
+
+                <!-- DevOps Suite -->
+                <div class="product-card" data-category="cloud">
+                    <div class="product-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>DevOps Suite</h3>
+                    <p class="product-subtitle">Complete CI/CD platform</p>
+                    <p class="product-description">Streamline your development workflow with automated testing, deployment pipelines, and infrastructure management.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Automated Pipelines</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Container Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Security Scanning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Performance Monitoring</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing">
+                        <span class="price">$249</span>
+                        <span class="period">/month</span>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn-primary">Start Building</button>
+                        <button class="btn-secondary">Documentation</button>
+                    </div>
+                </div>
+
+                <!-- Security Shield -->
+                <div class="product-card" data-category="enterprise">
+                    <div class="product-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Security Shield</h3>
+                    <p class="product-subtitle">Advanced cybersecurity</p>
+                    <p class="product-description">Comprehensive security solution with threat detection, incident response, and compliance management.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Threat Detection</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Incident Response</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Vulnerability Scanning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Compliance Reports</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing">
+                        <span class="price">$399</span>
+                        <span class="period">/month</span>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn-primary">Secure Now</button>
+                        <button class="btn-secondary">Risk Assessment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2>Compare Our Products</h2>
+            <div class="comparison-table">
+                <div class="table-header">
+                    <div class="feature-col">Features</div>
+                    <div class="product-col">AI Assistant Pro</div>
+                    <div class="product-col">Cloud Nexus</div>
+                    <div class="product-col">DataVault Enterprise</div>
+                </div>
+                <div class="table-row">
+                    <div class="feature-col">API Access</div>
+                    <div class="product-col"><i class="fas fa-check"></i></div>
+                    <div class="product-col"><i class="fas fa-check"></i></div>
+                    <div class="product-col"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="table-row">
+                    <div class="feature-col">24/7 Support</div>
+                    <div class="product-col"><i class="fas fa-check"></i></div>
+                    <div class="product-col"><i class="fas fa-times"></i></div>
+                    <div class="product-col"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="table-row">
+                    <div class="feature-col">Custom Integrations</div>
+                    <div class="product-col"><i class="fas fa-check"></i></div>
+                    <div class="product-col"><i class="fas fa-check"></i></div>
+                    <div class="product-col"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="table-row">
+                    <div class="feature-col">Enterprise SLA</div>
+                    <div class="product-col"><i class="fas fa-times"></i></div>
+                    <div class="product-col"><i class="fas fa-check"></i></div>
+                    <div class="product-col"><i class="fas fa-check"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products CTA -->
+    <section class="products-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Join over 10,000 companies already using our products to drive innovation and growth.</p>
+                <div class="cta-stats">
+                    <div class="stat-item">
+                        <h3>99.9%</h3>
+                        <p>Uptime SLA</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10K+</h3>
+                        <p>Active Users</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Expert Support</p>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="cta-btn primary">Start Free Trial</button>
+                    <button class="cta-btn secondary">Talk to Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>About Us</h2>
+                    <a href="/">How it works</a>
+                    <a href="/">Testimonials</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investments</a>
+                    <a href="/">Terms of Service</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Contact Us</h2>
+                    <a href="/">Contact</a>
+                    <a href="/">Support</a>
+                    <a href="/">Destinations</a>
+                    <a href="/">Sponsorships</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Videos</h2>
+                    <a href="/">Submit Video</a>
+                    <a href="/">Ambassadors</a>
+                    <a href="/">Agency</a>
+                    <a href="/">Influencer</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Social Media</h2>
+                    <a href="/">Instagram</a>
+                    <a href="/">Facebook</a>
+                    <a href="/">Youtube</a>
+                    <a href="/">Twitter</a>
+                </div>
+            </div>
+        </div>
+        
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="/" id="footer__logo">NEXT</a>
+                </div>
+                <p class="website__rights">© NEXT 2020. All rights reserved</p>
+                <div class="social__icons">
+                    <a href="/" class="social__icons--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="/" class="social__icons--link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="/" class="social__icons--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="/" class="social__icons--link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="/" class="social__icons--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbarMenu = document.querySelector('.navbar_menu');
+
+        mobileMenu.addEventListener('click', function() {
+            mobileMenu.classList.toggle('is-active');
+            navbarMenu.classList.toggle('active');
+        });
+
+        // Category filtering
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                tabBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const category = this.dataset.category;
+                
+                productCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Product card interactions
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Button click handlers
+        document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const action = this.textContent;
+                alert(`${action} clicked - Feature coming soon!`);
+            });
+        });
+    </script>
+</body>
+</html>
